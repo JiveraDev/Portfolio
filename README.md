@@ -1,2 +1,2 @@
 # Portfolio
-this is for my Major Quize
+this is for my Major Website Development
