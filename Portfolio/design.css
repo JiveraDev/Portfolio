@@ -1,0 +1,155 @@
+.nav-item, .nav-link:hover{
+    color: beige;
+    font-size: 17px;
+    transition: .1s;
+
+}
+.navbar{
+    height: 50px ;
+   background: linear-gradient(to bottom, #1b1b1b 0%, #1b1b1b 60%, #2c2c2c 100%);
+
+}
+.nav-item .nav-link {
+    
+  position: relative;
+  color: white !important; /* text color */
+  padding-bottom: 4px; /* space for underline */
+  transition: color 0.3s ease;
+}
+
+/* underline effect */
+.nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0; /* hidden at start */
+  height: 2px;
+  background-color: beige;
+  transition: width 0.3s ease; /* animate width */
+}
+
+/* on hover or active */
+.nav-item .nav-link:hover::after,
+.nav-item .nav-link.active::after {
+  width: 100%; /* expands left → right */
+}
+.active{
+    font-size: 17px;
+}
+.navbar-brand{
+    color: rgb(236, 239, 242);
+}
+body{
+ background-color: #2c2c2c;
+}
+#nav-baR{
+    background-color: #292828 !important;
+     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+
+.carousel
+
+/* this is the home
+ */
+
+.col{
+    padding-top: 20px;
+}
+ .custom-row {
+  width: 60%, 40%;
+  margin: 0 auto;       /* Center the row horizontally */
+  flex-wrap: wrap;      /* Allow wrapping on small screens */
+}
+.bg-gradient-primary-to-secondary {
+   background: linear-gradient(to top, #1b1b1b 0%, #1b1b1b 40%, #2c2c2c 100%);
+}
+
+.profile {
+  position: relative;
+  height: 50vw;
+  width: 50vw;
+  border-radius: 5vw;
+  margin-top: 5vw;
+  max-height: 40rem;
+  max-width: 40rem;
+}
+.profile .profile-img {
+  height: 80vw;
+  max-height: 45rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.text-aliceblue{
+    color: #BB86fc;
+}
+.btn-primary{
+      background-color: #BB86fc ;
+}
+.btn-primary:hover{
+      background-color:#5C5551;
+}
+.fs-custom{
+    font-size: 10px;
+    color: #E0E5E5;
+}
+.text-custom{
+    color: #E0E5E5;
+}
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.bg-secondary-custom {
+  background-color:#151B21 !important; /* Bootstrap’s secondary background */
+  color: #ffff !important; /* custom dark text */
+    border-radius: inherit;
+}
+
+.list-custom li:hover {
+  color: #BB86fc;   /* purple hover color */
+  cursor: pointer;  /* optional: makes it feel clickable */
+}
+.feature {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+}
+.bg-light-dark{
+  color: #161616;
+}
+
+.card-hover-scale {
+  transition: transform 0.3s ease; /* smooth animation */
+}
+
+.card-hover-scale:hover {
+  transform: scale(1.1); /* scales card by 10% */
+  z-index: 10; /* optional: bring it above other elements */
+}
+@media (max-width: 378px) {
+  .card-hover-scale .d-flex {
+    flex-direction: column !important; /* stack items vertically */
+    text-align: center; /* optional: center text */
+  }
+
+  .card-hover-scale img {
+    width: 100%; /* make image full width */
+    height: auto;
+    margin-bottom: 1rem; /* spacing below the image */
+  }
+
+  .card-hover-scale .p-5 {
+    padding: 1rem !important; /* reduce padding for small screens */
+  }
+    .navbar-brand {
+    display: none;
+  }
+
+}

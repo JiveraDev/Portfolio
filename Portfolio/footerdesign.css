@@ -1,0 +1,7 @@
+footer {
+  position: fixed; /* keeps it at the bottom */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* stays above other content */
+}
